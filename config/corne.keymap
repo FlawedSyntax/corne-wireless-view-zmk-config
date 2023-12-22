@@ -67,6 +67,13 @@
               // layers = <BASE LOWER RAISE>;
               bindings = <&kp END>; 
             };
+
+            combo_enter {
+                timeout-ms = <50>;
+                key-position = <31 32>;
+                binding = <&kp RET>;
+            };
+
         }; // end combos
 
         keymap {
@@ -74,9 +81,9 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// |      |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |      |
+// |      |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |      |
+// |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         label = "Base";
                         bindings = <
@@ -88,24 +95,24 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ?   |  !  | ALT |
                         label = "Lower";
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp RET   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &kp QUESTION   &kp EXCL   &trans &trans    &trans &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp SPACE  &trans   &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
+// |      |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |      |
+// |      |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         label = "Raise";
                         bindings = <
