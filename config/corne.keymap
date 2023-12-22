@@ -10,9 +10,13 @@
   keymap {
     compatible = "zmk,keymap";
 
+    // adding empty keys because they seem to be neccessary
     Base_layer {
       bindings = <
-        &trans &kp Q &kp W &kp E &kp R &kp T &kp Z &kp U &kp I &kp O &kp P &trans &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &trans &kp Y &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD &kp MINUS &kp LEFT_GUI &mo LOWER &kp SPACE &kp RETURN &mo RAISE &kp RIGHT_ALT 
+        &trans &kp Q &kp W &kp E &kp R &kp T &kp Z &kp U &kp I     &kp O        &kp P         &trans
+        &trans &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K     &kp L        &kp SEMICOLON &trans
+        &trans &kp Y &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp PERIOD   &kp MINUS     &trans
+        &trans &kp LEFT_GUI &mo LOWER &kp SPACE &kp RETURN &mo RAISE &kp RIGHT_ALT             &trans
       >;
     };
 
