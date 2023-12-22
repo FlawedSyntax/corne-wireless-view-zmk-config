@@ -11,9 +11,63 @@
 / {
 
         combos  {
-                compatible = "zmk,combos";
-
-        };
+            compatible = "zmk,combos";
+            combo_esc {
+              timeout-ms = <50>;
+              key-positions = <1 2>;
+              // layers = <LOWER BASE RAISE>;
+              bindings = <&kp ESC>; 
+            };
+            
+            combo_bsp {
+              timeout-ms = <50>;
+              key-positions = <9 10>;
+              // layers = <BASE LOWER RAISE>;
+              bindings = <&kp BS>; 
+            };
+            
+            combo_tab {
+              timeout-ms = <50>;
+              key-positions = <13 14>;
+              // layers = <BASE LOWER RAISE>;
+              bindings = <&kp TAB>; 
+            };
+            
+            combo_sft {
+              timeout-ms = <50>;
+              key-positions = <25 26>;
+              // layers = <BASE LOWER RAISE>;
+              bindings = <&kp LSFT>; 
+            };
+            
+            combo_del {
+              timeout-ms = <50>;
+              key-positions = <21 22>;
+              // layers = <LOWER RAISE BASE>;
+              bindings = <&kp DEL>; 
+            };
+            
+            combo_rsft {
+              timeout-ms = <50>;
+              key-positions = <33 34>;
+              // layers = <LOWER BASE RAISE>;
+              bindings = <&kp RSFT>; 
+            };
+            
+            combo_home {
+              timeout-ms = <50>;
+              key-positions = <18 19>;
+              // layers = <BASE LOWER RAISE>;
+              bindings = <&kp HOME>; 
+            };
+            
+            combo_end {
+              timeout-ms = <50>;
+              key-positions = <30 31>;
+              // layers = <BASE LOWER RAISE>;
+              bindings = <&kp END>; 
+            };
+        }; // end combos
 
         keymap {
                 compatible = "zmk,keymap";
