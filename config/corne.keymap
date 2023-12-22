@@ -70,7 +70,7 @@
 
             combo_enter {
                 timeout-ms = <50>;
-                key-position = <31 32>;
+                key-positions = <31 32>;
                 binding = <&kp RETURN>;
             };
 
