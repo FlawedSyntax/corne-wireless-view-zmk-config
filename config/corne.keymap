@@ -12,51 +12,61 @@
     
     combo_esc {
       timeout-ms = <50>;
-      key-positions = <1 2 9 10>;
+      key-positions = <1 2>;
       layers = <LOWER RAISE BASE>;
       bindings = <&kp ESC>; 
     };
     
-    combo_del {
+    combo_backspace {
       timeout-ms = <50>;
       key-positions = <9 10>;
       layers = <BASE LOWER RAISE>;
-      bindings = <&kp DEL>; 
+      bindings = <&kp BS>; 
     };
     
     combo_shift {
       timeout-ms = <50>;
-      key-positions = <13 14>;
-      layers = <LOWER RAISE>;
+      key-positions = <25 26>;
+      layers = <LOWER RAISE BASE>;
       bindings = <&kp LSFT>; 
     };
     
     combo_pos1 {
       timeout-ms = <50>;
-      key-positions = <21 22>;
+      key-positions = <18 19>;
       layers = <BASE LOWER RAISE>;
       bindings = <&kp HOME>; 
     };
     
     combo_end {
       timeout-ms = <50>;
-      key-positions = <33 34>;
+      key-positions = <30 31>;
       layers = <BASE LOWER RAISE>;
       bindings = <&kp END>; 
     };
-  };
-
-  behaviors {
-    hm: homerow_mods {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS";
-      #binding-cells = <2>;
-      tapping-term-ms = <250>;
-      quick_tap_ms = <0>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&kp>;
+    
+    combo_tab {
+      timeout-ms = <50>;
+      key-positions = <13 14>;
+      layers = <LOWER BASE RAISE>;
+      bindings = <&kp TAB>; 
+    };
+    
+    combo_rshift {
+      timeout-ms = <50>;
+      key-positions = <33 34>;
+      layers = <BASE LOWER RAISE>;
+      bindings = <&kp RSFT>; 
+    };
+    
+    combo_del {
+      timeout-ms = <50>;
+      key-positions = <20 21>;
+      layers = <LOWER RAISE>;
+      bindings = <&kp DEL>; 
     };
   };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -74,7 +84,7 @@
 
     Raise_layer {
       bindings = <
-        &kp TAB &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp BACKSPACE &kp LEFT_CONTROL &kp TAB &trans &trans &trans &trans &kp MINUS &kp EQUAL &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSLASH &kp GRAVE &kp LEFT_SHIFT &trans &trans &trans &trans &trans &kp UNDERSCORE &kp PLUS &kp LEFT_BRACE &kp RIGHT_BRACE &kp PIPE &kp TILDE &kp LEFT_GUI &trans &kp SPACE &kp BACKSPACE &trans &kp RIGHT_ALT 
+        &kp TAB &kp EXCLAMATION &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT &kp CARET &kp AMPERSAND &kp ASTERISK &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp BACKSPACE &kp LEFT_CONTROL &kp TAB &trans &trans &trans &trans &kp MINUS &kp EQUAL &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSLASH &kp GRAVE &kp LEFT_SHIFT &trans &trans &trans &trans &trans &kp UNDERSCORE &kp PLUS &kp LEFT_BRACE &kp RIGHT_BRACE &kp PIPE &kp TILDE &kp LEFT_GUI &trans &kp LEFT_SHIFT &kp BACKSPACE &trans &kp RIGHT_ALT 
       >;
     };
 
