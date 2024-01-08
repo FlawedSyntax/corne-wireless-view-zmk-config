@@ -90,10 +90,10 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |      |
-// |      |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |      |
-// |      |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// |      |  Q  |  W  |  E  |  R  |  T  |        |  Y  |  U   |  I  |  O  |  P  |      |
+// |      |  A  |  S  |  D  |  F  |  G  |        |  H  |  J   |  K  |  L  |  ;  |      |
+// |      |  Z  |  X  |  C  |  V  |  B  |        |  N  |  M   |  ,  |  .  |  /  |      |
+//                    | GUI | LWR | SPC |        | ENT | RSE  | ALT |
                         label = "Base";
                         bindings = <
    &trans   &kp Q &kp W &kp E &kp R &kp T   &kp Z &kp U  &kp I     &kp O   &kp P  &trans
@@ -104,10 +104,10 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// |      |     |     |     |     |     |   |  ?  |  !  |     |     |     |      |
-//                    | GUI |     | SPC |   | SPC |     | ALT |
+// |      |  1  |  2  |  3  |  4  |  5  |        |  6  |  7  |  8  |  9  |  0  |      |
+// |      | BT1 | BT2 | BT3 | BT4 | BT5 |        | LFT | DWN |  UP | RGT |     |      |
+// |      |     |     |     |     |     |        |  ?  |  !  |     |     |     |      |
+//                    | GUI |     | SPC |        | SPC |     | ALT |
                         label = "Lower";
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6      &kp N7     &kp N8 &kp N9    &kp N0 &trans
@@ -119,16 +119,16 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// |      |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |      |
-// |      |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |      |
-//                    | GUI |     | SPC |   | SPC |     | ALT |
+// |      |  !  |  @  |  #       |  $  |  %  |        |  ^  |  &  |  *  |  (  |  )  |      |
+// |      |     |     |          |     |     |        |  -  |  =  |  [  |  ]  |  \  |      |
+// |      |     |     |          |     |     |        |  _  |  +  |  {  |  }  | "|" |      |
+//                    | sk LCTRL |     | SPC |        | SPC |     | ALT |
                         label = "Raise";
                         bindings = <
    &kp  TAB  &kp EXCL    &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &sk LALT    &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &sk LCTRL   &trans &trans   &trans   &kp RET      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LCTRL &trans   &kp SPACE   &kp SPACE   &trans    &kp RALT
+                    	     &sk LCTRL &trans   &kp SPACE   &kp SPACE   &trans    &kp RALT
                         >;
                 };
         };
