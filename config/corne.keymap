@@ -77,11 +77,11 @@
               bindings = <&kp END>; 
             };
 
-            combo_enter {
-                timeout-ms = <50>;
-                key-positions = <31 32>;
-                bindings = <&kp RETURN>;
-            };
+//            combo_enter {
+//                timeout-ms = <50>;
+//                key-positions = <31 32>;
+//                bindings = <&kp RETURN>;
+//            };
 
         }; // end combos
 
@@ -89,31 +89,34 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+// Because my computer is set to german, I need to "translate" the ansi keys to their iso equivalents.
+// keys in parentheses indicate the key I want to happen, the key before them indicate the key I need to 
+// press for that to happen
 // -----------------------------------------||----------------------------------------------------------
 // |      |  Q  |  W  |  E  |  R  |  T  |        |   Y (Z)  |  U   |  I  |      O  |      P     |      |
-// |      |  A  |  S  |  D  |  F  |  G  |        |     H    |  J   |  K  |      L  |      !     |      |
-// |      |  Z  |  X  |  C  |  V  |  B  |        |     N    |  M   |  ,  |      .  |      ?     |      |
-//                    | GUI | LWR | SPC |        |    SPC   | RSE  | RALT |
+// |      |  A  |  S  |  D  |  F  |  G  |        |     H    |  J   |  K  |      L  |      / (-)     |      |
+// |      |  Z  |  X  |  C  |  V  |  B  |        |     N    |  M   |  ,  |      .  |      - (?)    |      |
+//                    | GUI | LWR | RET |        |    SPC   | RSE  | RALT |
                         label = "Base";
                         bindings = <
    &trans  &kp Q &kp W &kp E &kp R &kp T           &kp Y    &kp U  &kp I      &kp O     &kp P      &trans
-   &trans  &kp A &kp S &kp D &kp F &kp G           &kp H    &kp J  &kp K      &kp L     &kp EXCL   &trans
-   &trans  &kp Z &kp X &kp C &kp V &kp B           &kp N    &kp M  &kp COMMA  &kp DOT   &kp QMARK  &trans
-                  &kp LGUI &mo 1 &kp SPACE         &kp SPACE &mo 2 &kp RALT
+   &trans  &kp A &kp S &kp D &kp F &kp G           &kp H    &kp J  &kp K      &kp L     &kp SLASH  &trans
+   &trans  &kp Z &kp X &kp C &kp V &kp B           &kp N    &kp M  &kp COMMA  &kp DOT   &kp MINUS  &trans
+                  &kp LGUI &mo 1 &kp RETURN        &kp SPACE &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
 // ------------------------------------------------------------------------||--------------------------------------------------------
-// |      |                |           |             |           |     |        |    (      |  1       |  2      |  3    |  )     |      |
+// |      |                |           |             |           |     |        |    (      |  7       |  8      |  9    |  )     |      |
 // |      | BT1            | BT2       | BT3         | BT4       | BT5 |        |    [      |  4       |  5      |  6    |  ]     |      |
-// |      | BTCLEAR        |           |             |           |     |        |    {      |  7       |  8      |  9    |  }     |      |
-//                                     | GUI         |           | SPC |        |   SPC     |  0       | ALT     |
+// |      | BTCLEAR        |           |             |           |     |        |    {      |  1       |  2      |  3    |  }     |      |
+//                                     | GUI         |           | RET |        |   SPC     |  0       | ALT     |
                         label = "Lower";
                         bindings = <
-   &trans     &trans       &trans       &trans       &trans       &trans         &kp LPAR      &kp N1    &kp N2   &kp N3  &kp RPAR  &trans
+   &trans     &trans       &trans       &trans       &trans       &trans         &kp LPAR      &kp N7    &kp N8   &kp N9  &kp RPAR  &trans
    &trans &bt BT_SEL 0     &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LBKT      &kp N4    &kp N5   &kp N6  &kp RBKT  &trans
-   &trans     &bt BT_CLR   &trans       &trans       &trans       &trans         &kp LBRC      &kp N7    &kp N8   &kp N9  &kp RBRC  &trans
-                          	            &kp LGUI     &trans       &kp SPACE      &kp SPACE   &kp N0    &kp RALT
+   &trans     &bt BT_CLR   &trans       &trans       &trans       &trans         &kp LBRC      &kp N1    &kp N2   &kp N3  &kp RBRC  &trans
+                          	            &kp LGUI     &trans       &kp RETURN     &kp SPACE   &kp N0    &kp RALT
                         >;
                 };
 
@@ -122,13 +125,13 @@
 // |       |  LSFT   |  F1     |  F2     |  F3    | F10 |       |  ^      |  &      |  UP         |  (       |  )      |      |
 // |       |  LALT   |  F4     |  F5     |  F6    | F11 |       |  -      |  LFT    |  DWN        |  RGT     |  \      |      |
 // |       |  LCTRL  |  F7     |  F8     |  F9    | F12 |       |  _      |  +      |  {          |  }       | "|"     |      |
-//                             |  LCTRL  |        | SPC |       | SPC     |         | ALT         |
+//                             |  LCTRL  |        | RET |       | SPC     |         | ALT         |
                         label = "Raise";
                         bindings = <
    &trans   &sk LSFT    &kp F1   &kp F2   &kp F3   &kp F10       &kp CARET  &kp AMPS  &kp UP        &kp LPAR  &kp RPAR &trans
    &trans   &sk LALT    &kp F4   &kp F5   &kp F6   &kp F11       &kp MINUS  &kp LEFT  &kp DOWN      &kp RIGHT &kp BSLH &trans
    &trans   &sk LCTRL   &kp F5   &kp F8   &kp F9   &kp F12       &kp UNDER  &kp PLUS  &kp LBRC      &kp RBRC  &kp PIPE &trans
-                    	        &sk LCTRL  &trans &kp SPACE      &kp SPACE  &trans    &kp RALT
+                    	        &sk LCTRL  &trans &kp RETURN     &kp SPACE  &trans    &kp RALT
                         >;
                 };
         };
