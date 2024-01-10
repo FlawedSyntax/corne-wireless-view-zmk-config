@@ -1,5 +1,12 @@
-# Probleme mit der aktuellen Version
+# Offene Punkte
 
-Das Numpad ist nicht in der richtigen Orientierung (die Nummernreihe 1 bis 3 und 7 bis 9 sind vertauscht)
-
-Ah! wenn ich die Tastatureinstllung auf Englisch stelle, habe ich die nachvollziehbare Tastaturbelegung, habe aber natürlich im Moment Y und Z vertauscht.
+- [X] Das Numpad ist nicht in der richtigen Orientierung (die Nummernreihe 1 bis 3 und 7 bis 9 sind vertauscht)
+- [ ] sozusagen eine Übersetzung der englischen Tasten in ihre Deutschen Positionen
+- [X] F-Tasten
+- [X] Fragezeichen und Ausrufezeichen
+- [X] Enter nicht mehr per Kombi (lässt sich zu leicht triggern)
+- [ ] Sonstige Sonderzeichen:
+  - [ ] Hashtag
+  - [ ] Tilde
+  - [ ] Apostrophe
+  - [ ] ... 
