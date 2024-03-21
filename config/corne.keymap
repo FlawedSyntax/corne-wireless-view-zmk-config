@@ -139,7 +139,7 @@
 // |      |  A  |  S  |  D  |  F  |  G  |        |     H    |  J   |  K  |      L  |      / (-)     |      |
 // |      |  Z  |  X  |  C  |  V  |  B  |        |     N    |  M   |  ,  |      .  |      - (?)    |      |
 //                    | GUI | LWR | RET |        |    SPC   | RSE  | RALT |
-                        label = "Base";
+                        display-name = "Base";
                         bindings = <
    &trans  &kp Q &kp W &kp E &kp R &kp T           &kp DE_Z    &kp U  &kp I      &kp O     &kp P      &trans
    &trans  &kp A &kp S &kp D &kp F &kp G           &kp H    &kp J  &kp K      &kp L     &kp SLASH  &trans
@@ -153,7 +153,7 @@
 // |      | BT1            | BT2       | BT3         | BT4       | BT5 |        |    [       |  4       |  5      |  6    | ] (+)     |      |
 // |      | LCTRL          | LALT      |             |           |     |        |    <       |  1       |  2      |  3    |   >       |      |
 //                                     | GUI         |           | RET |        |   SPC      |  0       | ALT     |
-                        label = "Lower";
+                        display-name= "Lower";
                         bindings = <
    &trans     &bt BT_CLR   &trans       &trans       &trans       &trans         &kp DE_LPAR     &kp N7    &kp N8   &kp N9  &kp BSLH     &trans
    &trans  &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp DE_LBKT     &kp N4    &kp N5   &kp N6  &kp DE_PLUS  &trans
@@ -168,7 +168,7 @@
 // |       |  LALT   |  F4     |  F5     |  F6    | F11 |       |  -      |  LFT    |  DWN        |  RGT     |  \      |      |
 // |       |  LCTRL  |  F7     |  F8     |  F9    | F12 |       |  _      |  +      |  {          |  }       | "|" (') |      |
 //                             |  LSHIFT |  LALT  | RET |       | SPC     |         | ALT         |
-                        label = "Raise";
+                        display-name = "Raise";
                         bindings = <
    &trans   &sk LSFT    &kp F1   &kp F2   &kp F3   &kp F10       &kp CARET  &kp AMPS  &kp UP        &kp LPAR  &kp RPAR &trans
    &trans   &sk LALT    &kp F4   &kp F5   &kp F6   &kp F11       &kp MINUS  &kp LEFT  &kp DOWN      &kp RIGHT &kp BSLH &trans
