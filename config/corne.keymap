@@ -126,7 +126,7 @@
             combo_win {
                   timeout-ms = <50>;
                   key-positions = <38 39>;
-                  layers = <BASE LOWER RAISE>;
+                  // layers = <BASE LOWER RAISE>;
                   bindings = <&kp LGUI>; 
                 };
 
