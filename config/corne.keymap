@@ -184,7 +184,7 @@
             combo_umlaut_layer{
                 timeout-ms = <50>;
                 key-positions = <37 40>;
-                bindings = <&mo 3>
+                bindings = <&mo 3>;
             };
 
 //            combo_enter {
