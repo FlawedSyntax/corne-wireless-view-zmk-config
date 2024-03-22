@@ -252,7 +252,7 @@
 //                             |  LSHIFT |  LALT  | RET |       | SPC        |              | ALT         |
                         display-name = "Sonder";
                         bindings = <
-   &trans   &trans    &trans   &trans   &trans   &trans       &ktrans  &kp DE_U_UMLAUT   &trans     &kp DE_O_UMLAUT  &trans &trans
+   &trans   &trans    &trans   &trans   &trans   &trans       &trans  &kp DE_U_UMLAUT   &trans     &kp DE_O_UMLAUT  &trans &trans
    &trans   &kp DE_A_UMLAUT    &trans   &trans  &trans  &trans      &trans  &kp LEFT       &trans   &trans    &trans &trans
    &trans   &trans   &trans   &trans   &trans   &trans       &trans  &trans      &trans  &trans  &trans    &trans
                     	        &kp GUI  &kp LALT &kp RETURN     &kp SPACE    &trans         &kp RALT
