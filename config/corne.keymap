@@ -166,19 +166,19 @@
             combo_umlaut_u {
                   timeout-ms = <50>;
                   key-positions = <7 37 40>;
-                  bindings = <&kp DE_U_UMLAUT>; 
+                  bindings = <&kp LBKT>; 
                 };
 
             combo_umlaut_o {
                   timeout-ms = <50>;
                   key-positions = <9 37 40>;
-                  bindings = <&kp DE_O_UMLAUT>; 
+                  bindings = <&kp SEMICOLON>; 
                 };
 
             combo_umlaut_a {
                   timeout-ms = <50>;
                   key-positions = <13 37 40>;
-                  bindings = <&kp DE_A_UMLAUT>; 
+                  bindings = <&kp SQT>; 
                 };
 
 //            combo_enter {
