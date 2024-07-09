@@ -217,13 +217,13 @@
                 };
                 lower_layer {
 // ------------------------------------------------------------------------||--------------------------------------------------------
-// |      | BTCLEAR        |           |             | *         |     |        |    ~       |  7       |  8      |  9    |   )       |
+// |      | BTCLEAR        |           | 1           | 2         | *   |        |    ~       |  7       |  8      |  9    |   )       |
 // |      | BT1            | BT2       | BT3         | BT4       | BT5 |        |    # '     |  4       |  5      |  6    |   +       |      |
 // |      | LCTRL          | LALT      |             |           |     |        |    ` ´     |  1       |  2      |  3    |   ^       |      |
-//                                     | GUI         |           | RET |        |   SPC      |  0       | ALT     |
+//                                     | LCTRL       |           | RET |        |   SPC      |  0       | ALT     |
                         display-name= "Lower";
                         bindings = <
-   &trans     &bt BT_CLR   &trans       &trans       &kp DE_STAR  &trans         &kp DE_TILDE  &kp N7    &kp N8   &kp N9  &kp DE_BSLH  &trans
+   &trans     &bt BT_CLR   &trans       &kp N1       &kp N2       &kp DE_STAR    &kp DE_TILDE  &kp N7    &kp N8   &kp N9  &kp DE_BSLH  &trans
    &trans  &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp BSLH      &kp N4    &kp N5   &kp N6  &kp DE_PLUS  &trans
    &trans     &sk LCTRL    &sk LALT     &trans       &trans       &trans         &kp EQUAL     &kp N1    &kp N2   &kp N3  &kp GRAVE    &trans
                           	            &kp LCTRL     &trans       &kp RETURN     &kp SPACE     &kp N0    &kp RALT
@@ -235,13 +235,13 @@
 // |       |  LSFT   |  F1     |  F2     |  F3    | F10 |       |  (         |  /           |  UP         |  \       |  )      |      |
 // |       |  LALT   |  F4     |  F5     |  F6    | F11 |       |  {         |  LFT         |  DWN        |  RGT     |  }      |      |
 // |       |  LCTRL  |  F7     |  F8     |  F9    | F12 |       |  [         |  <           |  >          |  |       |  ]      |      |
-//                             |  LCTRL |  LALT  | RET |       | SPC        |              | ALT         |
+//                             |  GUI    |  LALT  | RET |       | SPC        |              | ALT         |
                         display-name = "Raise";
                         bindings = <
    &trans   &sk LSFT    &kp F1   &kp F2   &kp F3   &kp F10       &kp DE_LPAR  &kp DE_SLASH   &kp UP     &kp DE_BSLH  &kp DE_RPAR &trans
    &trans   &sk LALT    &kp F4   &kp F5   &kp F6   &kp F11       &kp DE_LBRC  &kp LEFT       &kp DOWN   &kp RIGHT    &kp DE_RBRC &trans
    &trans   &sk LCTRL   &kp F5   &kp F8   &kp F9   &kp F12       &kp DE_LBKT  &kp DE_LT      &kp DE_GT  &kp DE_PIPE  &kp DE_RBKT    &trans
-                    	        &kp GUI  &kp LALT &kp RETURN     &kp SPACE    &trans         &kp RALT
+                    	        &kp LGUI  &kp LALT &kp RETURN    &kp SPACE    &trans         &kp RALT
                         >;
                 };
                 umlaute_layer {
