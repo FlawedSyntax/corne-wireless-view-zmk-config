@@ -124,10 +124,8 @@
                   key-positions = <30 34>;
                   bindings = <&mo 4>;
             };
-
-
-
-}; // end combos
+        }; // end combos
+}
 
 
 // keymap
