@@ -170,10 +170,10 @@
           _x_       _x_       _x_       _x_       _x_           _x_       BCUT    &kp UP      _x_     &kp HOME
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │  TILDE  │   │ QUOTE   │  LEFT   │    UP   │  RIGHT  │   END   │
-        &kp LSHFT &kp LCTRL  &kp LALT &kp LGUI  &kp TILDE     &kp SQT   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
+        &kp LEFT_SHIFT &kp LCTRL  &kp LALT &kp LGUI  &kp TILDE     &kp SQT   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │  UNDO   │   CUT   │   COPY  │  PASTE  │  REDO   │   │  NOP    │  PGDN   │   PGUP  │   NOP   │  INSERT │
-          BUNDO      BCUT      BCPY     BPSTE     BREDO         _x_    &kp PG_DN &kp PG_UP    _x_     &kp INS
+          BUNDO      BCUT      BCPY     BPSTE     BREDO         _x_    &kp PAGE_DOWN &kp PAGE_UP    _x_     &kp INSERT
     // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
     //                     │   NOP   │   NOP   │   NOP   │   │   NOP   │   NOP   │   NOP   │
                               _x_       _x_       _x_            _x_       _x_       _x_
