@@ -109,13 +109,13 @@
             combo_navigation {
                   timeout-ms = <50>;
                   key-positions = <31 34>;
-                  bindings = <&mo 3>;
+                  bindings = <&mo 2>;
             };
 
             combo_media {
                   timeout-ms = <50>;
                   key-positions = <30 34>;
-                  bindings = <&mo 4>;
+                  bindings = <&mo 3>;
             };
         }; // end combos
 };
@@ -138,7 +138,7 @@
     // │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,     │   .     │    /    │
         &kp Z     &kp X     &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
     // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-                            &kp LCTRL &mo 1     &kp RETURN    &kp SPACE &mo 2     &kp RALT
+                            &kp LCTRL &mo 1     &kp RET    &kp SPACE &mo 2     &kp RALT
     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
         >;
       };
@@ -170,7 +170,7 @@
           _x_       _x_       _x_       _x_       _x_           _x_       BCUT    &kp UP      _x_     &kp HOME
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │  TILDE  │   │ QUOTE   │  LEFT   │    UP   │  RIGHT  │   END   │
-        &kp LEFT_SHIFT &kp LCTRL  &kp LALT &kp LGUI  &kp TILDE     &kp SQT   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
+        &kp LSFT &kp LCTRL  &kp LALT &kp LGUI  &kp TILDE     &kp SQT   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │  NOP   │   NOP   │   COPY  │  PASTE  │  REDO   │   │  NOP    │  PGDN   │   PGUP  │   NOP   │  INSERT │
           _x_       _x_       _x_         _x_    _x_           _x_      &kp PAGE_DOWN &kp PAGE_UP _x_  &kp INSERT
@@ -186,10 +186,10 @@
       bindings = <
     // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
     // │BTPROF 0 │BTPROF 1 │BTPROF 2 │BTPROF 3 │BTROF 4  │   │   NOP   │   STOP  │ Pause   │  Mute   │   NOP   │
-        &btsc_0   &btsc_1   &btsc_2   &btsc_3   &btsc_4         _x_     &kp K_STOP   &kp C_PLAY_PAUSE  &kp C_MUTE    _x_
+        &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4         _x_     &kp K_STOP   &kp C_PLAY_PAUSE  &kp C_MUTE    _x_
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │   NOP   │   │   NOP   │PREV_TRCK│ VOl_DOWN│  VOL_UP │NEXT_TRCK│
-        &kp LSHFT &kp LCTRL  &kp LALT &kp LGUI    _x_           _x_     &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+        &kp LSFT &kp LCTRL  &kp LALT &kp LGUI    _x_           _x_     &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │
         _x_       _x_       _x_       &bt BT_CLR   _x_          _x_       _x_       _x_       _x_       _x_     
