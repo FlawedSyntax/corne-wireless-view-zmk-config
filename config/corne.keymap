@@ -186,10 +186,10 @@
       bindings = <
     // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
     // │BTPROF 0 │BTPROF 1 │BTPROF 2 │BTPROF 3 │BTROF 4  │   │   NOP   │   STOP  │ Pause   │  Mute   │   NOP   │
-        &btsc_0   &btsc_1   &btsc_2   &btsc_3   &btsc_4         _x_       BSTOP    BPLYPSE    BMUTE      _x_
+        &btsc_0   &btsc_1   &btsc_2   &btsc_3   &btsc_4         _x_     &kp K_STOP   &kp C_PLAY_PAUSE  &kp C_MUTE    _x_
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │   NOP   │   │   NOP   │PREV_TRCK│ VOl_DOWN│  VOL_UP │NEXT_TRCK│
-        &kp LSHFT &kp LCTRL  &kp LALT &kp LGUI    _x_           OUTTOG    BPREV     BVOLD     BVOLU     BNEXT
+        &kp LSHFT &kp LCTRL  &kp LALT &kp LGUI    _x_           _x_     &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │
         _x_       _x_       _x_       &bt BT_CLR   _x_          _x_       _x_       _x_       _x_       _x_     
