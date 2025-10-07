@@ -121,8 +121,8 @@
             combo_enter {
               timeout-ms = <50>;
               key-positions = <32 33>;
-              bindings = <&kp LGUI>
-            }
+              bindings = <&kp LGUI>;
+            };
 
             // combo_media {
             //       timeout-ms = <50>;
@@ -197,8 +197,8 @@
       display-name = "Media";
       bindings = <
     // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-    // │BTPROF 0 │BTPROF 1 │BTPROF 2 │BTPROF 3 │BTROF 4  │   │   NOP   │   STOP  │ Pause   │  Mute   │   NOP   │
-        &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4         _x_     &kp K_STOP   &kp C_PLAY_PAUSE  &kp C_MUTE    _x_
+    // │BTPROF 0 │BTPROF 1 │BTPROF 2 │BTPROF 3 │BTROF 4  │   │   pr   │   STOP  │ Pause   │  Mute   │   NOP   │
+        &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4         &kp PRINTSCREEN     &kp K_STOP   &kp C_PLAY_PAUSE  &kp C_MUTE    _x_
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │   NOP   │   │   NOP   │PREV_TRCK│ VOl_DOWN│  VOL_UP │NEXT_TRCK│
         &kp LSFT &kp LCTRL  &kp LALT &kp LGUI    _x_           _x_     &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
