@@ -121,7 +121,7 @@
             combo_enter {
               timeout-ms = <50>;
               key-positions = <32 33>;
-              bindings = <&kp RET>
+              bindings = <&kp LGUI>
             }
 
             // combo_media {
@@ -150,7 +150,7 @@
     // │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,     │   .     │    /    │
         &kp Z     &kp X     &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA &kp DOT   &kp SLASH
     // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-                            &kp LCTRL &mo 1     &kp LGUI    &kp SPACE &mo 2     &kp RALT
+                            &kp LCTRL &mo 1     &kp RET       &kp SPACE &mo 2     &kp RALT
     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
         >;
       };
