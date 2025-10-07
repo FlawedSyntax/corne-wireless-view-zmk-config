@@ -181,8 +181,8 @@
     // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │   NOP   │   CUT   │   UP    │  NOP    │  HOME   │
           _x_       _x_       _x_       _x_       _x_           _x_       BCUT    &kp UP      _x_     &kp HOME
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-    // │ SHIFT   │  CTRL   │   ALT   │   SUPER │  TILDE  │   │ QUOTE   │  LEFT   │    UP   │  RIGHT  │   END   │
-        &kp LSFT &kp LCTRL  &kp LALT &kp LGUI  &kp TILDE     &kp SQT   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
+    // │ SHIFT   │  CTRL   │   ALT   │   SUPER │  grave  │   │ QUOTE   │  LEFT   │    UP   │  RIGHT  │   END   │
+        &kp LSFT &kp LCTRL  &kp LALT &kp LGUI  &kp GRAVE     &kp SQT   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │  NOP   │   NOP   │   COPY  │  PASTE  │  REDO   │   │  NOP    │  PGDN   │   PGUP  │   NOP   │  INSERT │
           _x_       _x_       _x_         _x_    _x_           _x_      &kp PAGE_DOWN &kp PAGE_UP _x_  &kp INSERT
