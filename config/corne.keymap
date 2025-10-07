@@ -20,15 +20,15 @@
 // shorter codes - also from BerkeleyTrue
 #define ___     &trans // transparent
 #define _x_     &none
-#define BPSTE    &kp  K_PASTE
-#define BCPY     &kp  K_COPY
-#define BCUT     &kp  K_CUT
-#define BUNDO    &kp  K_UNDO
-#define BREDO    &kp  K_REDO
-#define BPREV    &kp  K_PREV
-#define BNEXT    &kp  K_NEXT
-#define BPLYPSE  &kp  K_PP
-#define BMUTE    &kp  K_MUTE
+#define BPSTE    &kp  PASTE
+#define BCPY     &kp  COPY
+#define BCUT     &kp  CUT
+#define BUNDO    &kp  UNDO
+#define BREDO    &kp  REDO
+#define BPREV    &kp  C_PREV
+#define BNEXT    &kp  C_NEXT
+#define BPLYPSE  &kp  C_PP
+#define BMUTE    &kp  C_MUTE
 #define BSTOP    &kp  K_STOP2
 #define BVOLD    &kp  K_VOL_DN
 #define BVOLU    &kp  K_VOL_UP
@@ -189,7 +189,7 @@
         &btsc_0   &btsc_1   &btsc_2   &btsc_3   &btsc_4         _x_       BSTOP    BPLYPSE    BMUTE      _x_
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │   NOP   │   │   NOP   │PREV_TRCK│ VOl_DOWN│  VOL_UP │NEXT_TRCK│
-        &kp LSHFT &kp LCTRL  &kp LALT &kp LGUI  _x_           OUTTOG    BPREV     BVOLD     BVOLU     BNEXT
+        &kp LSHFT &kp LCTRL  &kp LALT &kp LGUI    _x_           OUTTOG    BPREV     BVOLD     BVOLU     BNEXT
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │
         _x_       _x_       _x_       &bt BT_CLR   _x_          _x_       _x_       _x_       _x_       _x_     
