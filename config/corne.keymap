@@ -115,14 +115,14 @@
             combo_navigation {
                   timeout-ms = <50>;
                   key-positions = <31 34>;
-                  bindings = <&mo 2>;
-            };
-
-            combo_media {
-                  timeout-ms = <50>;
-                  key-positions = <30 34>;
                   bindings = <&mo 3>;
             };
+
+            // combo_media {
+            //       timeout-ms = <50>;
+            //       key-positions = <30 34>;
+            //       bindings = <&mo 3>;
+            // };
         }; // end combos
 };
 
