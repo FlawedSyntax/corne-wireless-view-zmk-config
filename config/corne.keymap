@@ -40,13 +40,6 @@
     /delete-property/ ignore-modifiers;
 };
 
-// define 5 col keyboard layout
-/ {
-  chosen {
-    zmk;matrix_transform = &five_column_transform;
-  };
-};
-
 / {
         combos  {
             compatible = "zmk,combos";
@@ -125,7 +118,7 @@
                   bindings = <&mo 4>;
             };
         }; // end combos
-}
+};
 
 
 // keymap
@@ -149,6 +142,7 @@
     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
         >;
       };
+      
       number_layer {
         display-name = "Number";
         bindings = <
@@ -167,6 +161,7 @@
     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
       >;
     };
+    
     navigation_layer { 
       display-name = "Navigation";
       bindings = <
@@ -185,6 +180,7 @@
     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
       >;
     };
+    
     media_layer {
       display-name = "Media";
       bindings = <
@@ -202,5 +198,7 @@
                               ___       _x_       _x_            _x_      _x_      _x_
     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
           >;
+    };
+  };
       
 };
