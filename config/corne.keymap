@@ -41,7 +41,7 @@
 };
 
 / {
-    foostan_corne_5col_layout: keymap_layout {
+    corne_5col_layout: corne_5col_layout {
         compatible = "zmk,physical-layout";
         display-name = "Corne 5col";
         transform = <&five_column_transform>;
@@ -49,7 +49,7 @@
 
     chosen {
         zmk,matrix_transform = &five_column_transform;
-        zmk,physical-layout = &foostan_corne_5col_layout;
+        zmk,physical-layout = &corne_5col_layout;
     };
 };
 
