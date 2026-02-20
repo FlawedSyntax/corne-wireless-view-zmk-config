@@ -190,11 +190,11 @@
       display-name = "Navigation";
       bindings = <
     // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-    // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │  HOME   │   CUT   │   UP    │  NOP    │  NOP    │
-          _x_       _x_       _x_       _x_       _x_        &kp HOME      BCUT    &kp UP      _x_      _x_
+    // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │  HOME   │   CUT   │   UP    │  NOP    │  HOME   │
+          _x_       _x_       _x_       _x_       _x_        &kp HOME      BCUT    &kp UP   &kp QUOTE &kp HOME
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │  grave  │   │  END    │  LEFT   │    UP   │  RIGHT  │   END   │
-        &kp LSFT &kp LCTRL  &kp LALT &kp LGUI  &kp GRAVE     &kp END   &kp LEFT  &kp DOWN  &kp RIGHT &kp QUOTE
+        &kp LSFT &kp LCTRL  &kp LALT &kp LGUI  &kp GRAVE     &kp END   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │  NOP   │   NOP   │   COPY  │  PASTE  │  REDO   │   │  NOP    │  PGDN   │   PGUP  │   NOP   │  INSERT │
           _x_       _x_       _x_         _x_    _x_           _x_      &kp PAGE_DOWN &kp PAGE_UP _x_  &kp INSERT
