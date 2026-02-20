@@ -190,8 +190,8 @@
       display-name = "Navigation";
       bindings = <
     // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-    // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │  HOME   │   CUT   │   UP    │  NOP    │  HOME   │
-          _x_       _x_       _x_       _x_       _x_        &kp HOME      BCUT    &kp UP   &kp QUOTE &kp HOME
+    // │   NOP   │   NOP   │   NOP   │   NOP   │   NOP   │   │  HOME   │   CUT   │   UP    │  QUOTE  │  HOME   │
+          _x_       _x_       _x_       _x_       _x_        &kp HOME      BCUT    &kp UP   &kp SQT &kp HOME
     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
     // │ SHIFT   │  CTRL   │   ALT   │   SUPER │  grave  │   │  END    │  LEFT   │    UP   │  RIGHT  │   END   │
         &kp LSFT &kp LCTRL  &kp LALT &kp LGUI  &kp GRAVE     &kp END   &kp LEFT  &kp DOWN  &kp RIGHT &kp END
